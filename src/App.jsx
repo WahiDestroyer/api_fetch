@@ -1,25 +1,18 @@
-import { BrowserRouter, Route, Routes } from "react-router"
-import Home from "./pages/Home"
-import Layout from "./components/Layout/Index"
-import BlogPartD from "./components/Utility/BlogPartD"
-
-
+import { BrowserRouter, Route, Routes } from "react-router";
+import Home from "./pages/Home";
+import BlogDetails from "./components/home/BlogDetails";
 
 function App() {
-  
-
   return (
     <>
-       <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route path="/" element={<Home />} />
-          <Route path="/Blog" element={<BlogPartD />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+      <BrowserRouter>
+        <Routes>
+          <Route index element={<Home />} />
+          <Route path="/blogs/:id" element={<BlogDetails />} />
+        </Routes>
+      </BrowserRouter>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
