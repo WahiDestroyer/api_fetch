@@ -13,7 +13,7 @@ const Button = ({
 
   const variantStyles = {
     primary:
-      "bg-indigo-600 text-white hover:bg-indigo-700 disabled:bg-gray-400 disabled:cursor-not-allowed",
+      "bg-indigo-600 text-white hover:bg-indigo-900 disabled:bg-gray-400 disabled:cursor-not-allowed",
     outline:
       "border border-indigo-600 text-indigo-600 hover:bg-indigo-50 disabled:border-gray-300 disabled:text-gray-400 disabled:cursor-not-allowed",
     ghost:
