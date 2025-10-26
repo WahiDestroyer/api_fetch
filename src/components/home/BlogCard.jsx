@@ -21,7 +21,7 @@ const BlogCard = ({ data }) => {
             {data.description.substring(0, 40)}...
           </p>
           
-          <Button variant="primary" size="md">Read More</Button>
+          <Button variant="ghost" size="md" onClick={()=>console.log("BOOOOOOOOOOOM")}>Read More</Button>
           
         </div>
       </Link>
